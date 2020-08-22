@@ -1,0 +1,9 @@
+Look at the fabfile for what tasks can be run with fab.
+
+Additionally, there's a script parallel_fab.sh that is invoked in the following
+way:
+
+ONLINETOWN_SERVERS=server1.example.org,server2.example.org ./parallel_fab.sh
+example-fab-task
+
+It will output stdout and stderr from all the hosts to ./log/

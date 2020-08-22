@@ -1,0 +1,8 @@
+server {
+	  server_name <domain>;
+
+	  location / {
+		  proxy_pass https://localhost:4000;
+		  proxy_set_header Host $http_host;
+	  }
+}
